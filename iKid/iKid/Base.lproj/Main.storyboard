@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4JX-oL-sFM">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Next" id="CW1-0U-eSJ">
+                                        <connections>
+                                            <action selector="flipJoke:" destination="BYZ-38-t0r" id="T4w-Hs-3cz"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ugD-JR-enw">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Good" id="Eiv-0c-AoW">
+                                        <connections>
+                                            <action selector="showGood:" destination="BYZ-38-t0r" id="Ypd-VI-Iqg"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Pun" id="pOG-Ng-YnY">
+                                        <connections>
+                                            <action selector="showPun:" destination="BYZ-38-t0r" id="0mk-j0-gLO"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Bad" id="hNT-o6-Ss7">
+                                        <connections>
+                                            <action selector="showBad:" destination="BYZ-38-t0r" id="tPn-TQ-Kjj"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ugD-JR-enw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="4mM-uZ-y8S"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ugD-JR-enw" secondAttribute="trailing" constant="-20" id="UuX-ES-sAf"/>
+                            <constraint firstItem="4JX-oL-sFM" firstAttribute="trailing" secondItem="ugD-JR-enw" secondAttribute="trailing" id="UyF-r7-4eK"/>
+                            <constraint firstItem="ugD-JR-enw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Vvu-a1-mxS"/>
+                            <constraint firstAttribute="trailing" secondItem="4JX-oL-sFM" secondAttribute="trailing" id="XGo-iY-M4W"/>
+                            <constraint firstItem="4JX-oL-sFM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jBb-4P-RTj"/>
+                            <constraint firstItem="4JX-oL-sFM" firstAttribute="leading" secondItem="ugD-JR-enw" secondAttribute="leading" id="x4W-xi-xiC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4JX-oL-sFM" secondAttribute="bottom" id="x8J-Oz-Oyr"/>
+                            <constraint firstItem="ugD-JR-enw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="yz2-7Y-Wa8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Good Setup-->
+        <scene sceneID="YYV-Bd-jzK">
+            <objects>
+                <viewController storyboardIdentifier="GoodFirst" title="Good Setup" id="aLg-Uo-L1G" customClass="GoodSetUpViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3ut-OT-4of"/>
+                        <viewControllerLayoutGuide type="bottom" id="vKg-mo-CLE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Uvo-Lq-mBQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Want to hear a pizza joke?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NnC-B6-NiX">
+                                <rect key="frame" x="200" y="289" width="200" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NnC-B6-NiX" firstAttribute="centerY" secondItem="Uvo-Lq-mBQ" secondAttribute="centerY" id="DsJ-U6-nQT"/>
+                            <constraint firstItem="NnC-B6-NiX" firstAttribute="centerY" secondItem="Uvo-Lq-mBQ" secondAttribute="centerY" id="J0r-xh-QGQ"/>
+                            <constraint firstItem="NnC-B6-NiX" firstAttribute="centerX" secondItem="Uvo-Lq-mBQ" secondAttribute="centerX" id="UGF-vq-M85"/>
+                            <constraint firstItem="NnC-B6-NiX" firstAttribute="centerX" secondItem="Uvo-Lq-mBQ" secondAttribute="centerX" id="dRA-Pz-Lok"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Enh-xU-X0j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1021" y="-304"/>
+        </scene>
+        <!--Pun Setup-->
+        <scene sceneID="6vy-4S-KFK">
+            <objects>
+                <viewController storyboardIdentifier="PunFirst" title="Pun Setup" id="kB6-jy-9gp" customClass="PunSetUpViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Yk-Gk-2dG"/>
+                        <viewControllerLayoutGuide type="bottom" id="lJC-IX-6P7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o8J-uU-3Ag">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why aren't koalas actual bears?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Or-X3-zZk">
+                                <rect key="frame" x="179" y="289" width="242" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Or-X3-zZk" firstAttribute="centerY" secondItem="o8J-uU-3Ag" secondAttribute="centerY" id="5xR-D3-aKO"/>
+                            <constraint firstItem="3Or-X3-zZk" firstAttribute="centerY" secondItem="o8J-uU-3Ag" secondAttribute="centerY" id="AJS-pI-Ws9"/>
+                            <constraint firstItem="3Or-X3-zZk" firstAttribute="centerX" secondItem="o8J-uU-3Ag" secondAttribute="centerX" id="d62-gw-KcU"/>
+                            <constraint firstItem="3Or-X3-zZk" firstAttribute="centerX" secondItem="o8J-uU-3Ag" secondAttribute="centerX" id="ecf-HY-WHX"/>
+                            <constraint firstItem="3Or-X3-zZk" firstAttribute="centerY" secondItem="o8J-uU-3Ag" secondAttribute="centerY" id="hzi-WX-Xkt"/>
+                            <constraint firstItem="3Or-X3-zZk" firstAttribute="centerX" secondItem="o8J-uU-3Ag" secondAttribute="centerX" id="iNP-lP-fD9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EHy-J4-YPR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1014" y="358"/>
+        </scene>
+        <!--Bad Setup-->
+        <scene sceneID="XjZ-Zv-Xdr">
+            <objects>
+                <viewController storyboardIdentifier="BadFirst" title="Bad Setup" id="lQt-L4-wai" customClass="BadSetUpViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xgh-bU-1U6"/>
+                        <viewControllerLayoutGuide type="bottom" id="RGm-mU-SHP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BDS-gs-ul1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is red and smells like blue paint?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oy4-Z2-IY1">
+                                <rect key="frame" x="155" y="289" width="291" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Oy4-Z2-IY1" firstAttribute="centerX" secondItem="BDS-gs-ul1" secondAttribute="centerX" id="PYB-pi-bwc"/>
+                            <constraint firstItem="Oy4-Z2-IY1" firstAttribute="centerX" secondItem="BDS-gs-ul1" secondAttribute="centerX" id="fhg-TU-tHA"/>
+                            <constraint firstItem="Oy4-Z2-IY1" firstAttribute="centerY" secondItem="BDS-gs-ul1" secondAttribute="centerY" id="jvv-XU-hAh"/>
+                            <constraint firstItem="Oy4-Z2-IY1" firstAttribute="centerY" secondItem="BDS-gs-ul1" secondAttribute="centerY" id="nQg-yD-5P3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="32S-LC-RAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1014" y="1018"/>
+        </scene>
+        <!--Pun Punchline-->
+        <scene sceneID="fDQ-oP-CR3">
+            <objects>
+                <viewController storyboardIdentifier="PunSecond" title="Pun Punchline" id="Pe9-Vf-ezh" customClass="PunPunchViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hzH-l8-cWG"/>
+                        <viewControllerLayoutGuide type="bottom" id="RXX-y0-wjl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ymi-6j-78N">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="They don't have the koalafications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZR-kT-fSD">
+                                <rect key="frame" x="170" y="289" width="261" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZZR-kT-fSD" firstAttribute="centerY" secondItem="Ymi-6j-78N" secondAttribute="centerY" id="KRK-WK-zqe"/>
+                            <constraint firstItem="ZZR-kT-fSD" firstAttribute="centerX" secondItem="Ymi-6j-78N" secondAttribute="centerX" id="Khb-xy-ZPD"/>
+                            <constraint firstItem="ZZR-kT-fSD" firstAttribute="centerX" secondItem="Ymi-6j-78N" secondAttribute="centerX" id="Ouf-g0-bCA"/>
+                            <constraint firstItem="ZZR-kT-fSD" firstAttribute="centerY" secondItem="Ymi-6j-78N" secondAttribute="centerY" id="UkW-O7-BVf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B3i-tD-IK3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1639" y="358"/>
+        </scene>
+        <!--Bad Punchline-->
+        <scene sceneID="QcG-9k-T20">
+            <objects>
+                <viewController storyboardIdentifier="BadSecond" title="Bad Punchline" id="U6L-uV-rKX" customClass="BadPunchViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jvv-0S-2SL"/>
+                        <viewControllerLayoutGuide type="bottom" id="BpP-RN-QzN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qtk-Ph-zwk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red Paint" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4h3-Nf-L9N">
+                                <rect key="frame" x="264" y="289" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4h3-Nf-L9N" firstAttribute="centerY" secondItem="Qtk-Ph-zwk" secondAttribute="centerY" id="Abn-em-SmE"/>
+                            <constraint firstItem="4h3-Nf-L9N" firstAttribute="centerY" secondItem="Qtk-Ph-zwk" secondAttribute="centerY" id="Tqd-qh-u8C"/>
+                            <constraint firstItem="4h3-Nf-L9N" firstAttribute="centerX" secondItem="Qtk-Ph-zwk" secondAttribute="centerX" id="fsg-YL-YYH"/>
+                            <constraint firstItem="4h3-Nf-L9N" firstAttribute="centerX" secondItem="Qtk-Ph-zwk" secondAttribute="centerX" id="lbv-wX-VZY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uU5-uP-irN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1639" y="1018"/>
+        </scene>
+        <!--Good Punchline-->
+        <scene sceneID="qmc-bS-NQu">
+            <objects>
+                <viewController storyboardIdentifier="GoodSecond" title="Good Punchline" id="fQI-9L-vij" customClass="GoodPunchViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jkU-Dl-tCQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="KrL-fd-NYZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fuQ-mM-Aji">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Never mind, it's pretty cheesy." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fT4-eD-C0c">
+                                <rect key="frame" x="185" y="289" width="231" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fT4-eD-C0c" firstAttribute="centerY" secondItem="fuQ-mM-Aji" secondAttribute="centerY" id="AFA-4w-Hwf"/>
+                            <constraint firstItem="fT4-eD-C0c" firstAttribute="centerY" secondItem="fuQ-mM-Aji" secondAttribute="centerY" id="R2N-Pi-kXX"/>
+                            <constraint firstItem="fT4-eD-C0c" firstAttribute="centerX" secondItem="fuQ-mM-Aji" secondAttribute="centerX" id="jAm-bB-7Lp"/>
+                            <constraint firstItem="fT4-eD-C0c" firstAttribute="centerX" secondItem="fuQ-mM-Aji" secondAttribute="centerX" id="w2b-TR-dfm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lXE-Ru-zuK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1639" y="-304"/>
+        </scene>
+    </scenes>
+</document>
